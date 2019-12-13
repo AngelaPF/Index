@@ -10,12 +10,16 @@ body {
 
 header {
   height: 100px;
-  text-align: center;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: xx-large;
   color: rgb(0, 85, 100);
-  
+  display: flex;
 }
+
+.title {
+  margin: auto;
+}
+
 header > img {
   height: 100%;
 }
@@ -68,47 +72,46 @@ footer {
 
 section {
   padding: 10px 0 10px 0;
-  max-width: 70%;
-  width: 70%;
-  float: center;
-}
-
-article {
-  flex-grow: 0.5;
-  height: 280px;
-  width: 300px;
+  width: 100%;
   float: left;
-  background: #ffffff;
-  margin: 30px;
-  font-size: large;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  
 }
 
-aside {
-  max-width: 40%;
+.section-video {
+  padding: 10px 0 10px 0;
+  width: 60%;
+  float: left;
+  margin-right: 20px;
+}
+
+.banner {
+  width: 100%;
+}
+
+.article {
+  height: auto;
   width: 40%;
   float: left;
   background: #ffffff;
-  max-height: 50%;
-  margin-top: 20px;
+  font-size: large;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 20px;
+  padding: 10px;
+  height: 300px;
 }
 
-aside input[type="text"],
-textarea {
+video {
   width: 100%;
-  margin-bottom: 8px;
-  border-radius: 4px;
-  border-style: groove;
-  align-content: center;
+  height: auto;
 }
-aside input[type="text"] {
-  padding: 10px;
-  border-width: 2px;
-  margin-top: 8px;
-}
-aside textarea {
-  resize: none;
+
+aside {
+  width: 30%;
+  float: left;
+  background: #ffffff;
+  max-height: 200px;
+  overflow: auto;
+  margin-top: 20px;
+  max-height: 420px;
 }
 
 aside .form {
@@ -127,7 +130,22 @@ aside .form {
   cursor: pointer;
 }
 
-.form input[type="button"]:hover{
-    background: #d4a402;
-    color:  #004669;
+input[type="button"] {
+  background: #d4a402;
+  color: #004669;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  display: block;
+  margin: auto;
+  color: #004669;
+}
+
+.article-pdf {
+  height: auto;
+  width: 50%;
+  float: left;
+  margin: auto;
 }
